@@ -1,0 +1,3 @@
+sentiment_group,avg_pnl,median_pnl,avg_win_rate,avg_trades,avg_pos_size
+Fear,5185.15,122.74,0.36,105.36,8529.86
+Greed,4144.21,265.25,0.36,76.91,5954.63
