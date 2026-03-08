@@ -59,7 +59,8 @@ import numpy as np
 data = load_data()
 
 st.sidebar.header("Filter Data")
-segment_filter = st.sidebar.multiselect("Select Trader Segment", options=data['segment'].unique(), default=data['segment'].unique())
+segment_options = data['segment'].unique().tolist()
+segment_filter = st.sidebar.multiselect("Select Trader Segment", options=segment_options, default=segment_options)
 
 filtered_data = data[data['segment'].isin(segment_filter)]
 
