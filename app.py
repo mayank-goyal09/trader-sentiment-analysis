@@ -12,8 +12,9 @@ st.markdown("Explore how hyperliquid traders alter their behaviors (leverage pro
 # Cache the data loading so it's snappy
 @st.cache_data
 def load_data():
-    sentiment = pd.read_csv('data/fear_greed_index.csv')
-    trades = pd.read_csv('data/historical_data.csv')
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    sentiment = pd.read_csv(os.path.join(base_dir, 'data', 'fear_greed_index.csv'))
+    trades = pd.read_csv(os.path.join(base_dir, 'data', 'historical_data.csv'))
     
     sentiment['date'] = pd.to_datetime(sentiment['date']).dt.date
     trades['Timestamp IST'] = pd.to_datetime(trades['Timestamp IST'], format='%d-%m-%Y %H:%M', errors='coerce')

@@ -5,3 +5,4 @@ seaborn
 scikit-learn
 nbformat
 streamlit
+altair<5
