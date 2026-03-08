@@ -9,6 +9,14 @@ The objective is to identify **behavioral patterns** that can inform practical t
 
 ---
 
+## Interactive Dashboard
+
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20Dashboard-red?logo=streamlit)](https://trader-sentiment-analysis-mayank-goyal-assignment.streamlit.app/)
+
+Explore the interactive dashboard to analyze trader behavior under different market sentiment conditions.
+
+---
+
 ## Datasets
 
 ### 1. Bitcoin Market Sentiment
