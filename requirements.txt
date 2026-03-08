@@ -6,3 +6,4 @@ scikit-learn
 nbformat
 streamlit
 altair<5
+standard-imghdr
